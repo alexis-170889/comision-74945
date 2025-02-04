@@ -1,28 +1,50 @@
-/* Estilos generales */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+/* Paleta de colores oscuros */
+:root {
+    --color-principal: #121212; /* Negro */
+    --color-secundario: #1F1F1F; /* Gris oscuro */
+    --color-texto: #E0E0E0; /* Blanco grisáceo */
+    --color-acento: #413f44; /* Para botones/enlaces */
+    --color-hover: #c1b9d4; /* Para efectos hover */
+}
 
-*{
+/* Reset y configuración base */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style-type: none;
-    text-decoration: none;
-}
-body{
-    font-family:"Josefin Sans", sans-serif;
-}
-/* Estilos generales */
-body {
-    margin: 0;
-    background-color: #121212;
-    color: #E0E0E0;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
+body {
+    background-color: var(--color-principal);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+/* Header y navegación */
+.navbar {
+    background-color: var(--color-secundario) !important;
+}
+.navbar-brand img {
+    width: 100px;
+    height: auto;
+}
+.nav-link {
+    color: var(--color-texto) !important;
+    font-weight: bold;
+}
+.nav-link:hover {
+    color: var(--color-hover) !important;
+}
+
+/* Header */
 header {
     background-color: #1F1F1F;
     padding: 1rem;
     position: sticky;
     top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 nav {
@@ -43,10 +65,6 @@ nav ul li a {
     text-decoration: none;
     color: #E0E0E0;
     font-weight: bold;
-}
-
-.logo {
-    max-width: 100px;
 }
 
 /* Secciones principales */
@@ -158,12 +176,69 @@ main .productos {
     border-radius: 8px;
 }
 
-.grid-item h3 {
+.grid-item h2 {
     font-size: 1.2rem;
     margin-top: 0.5rem;
 }
 
-section.consejos h2{
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.producto {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.producto img {
+    max-width: 250px;
+    max-height: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.producto h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.producto p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #bb86fc;
+}
+
+.producto button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #bb86fc;
+    color: #121212;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #3700b3;
+}
+
+section.consejos h2{    
     text-align: center;
     font-size: 30px;
 }
@@ -173,11 +248,44 @@ section.consejos h2{
     margin-top: 5px;
 }
 
+/* Carrusel */
+.carrusel-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #1F1F1F;
+    border-radius: 8px;
+}
+
+.carrusel-container section {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    background-color: #2C2C2C;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.imagen-section {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.texto-section {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
 /* Footer */
 footer {
     background-color: #1F1F1F;
     color: #E0E0E0;
-    padding: 1rem;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
 }
 
 footer a {
@@ -188,26 +296,28 @@ footer a {
 footer .redes, footer .formulario, footer .terminos {
     margin-bottom: 1rem;
 }
-footer div.redes{
+
+footer div.redes {
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
-    margin: 10px 10px 20px 10px;
+    margin: 10px;
 }
 
-footer div.formulario{
+footer div.formulario {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-footer .redes a img{
+footer .redes a img {
     width: 50px;
     height: 50px;
 }
-footer .whatsapp img{
+
+footer .whatsapp img {
     position: fixed;
     bottom: 10px;
     right: 5px;
@@ -215,7 +325,40 @@ footer .whatsapp img{
     height: 50px;    
 }
 
+/* Formularios */
+footer form input[type="email"] {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 0.5rem;
+    width: 100%;
+    max-width: 250px;
+}
+
+footer form button {
+    background-color: #E91E63;
+    color: #FFF;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer form button:hover {
+    background-color: #D81B60;
+}
+
 /* Media Queries */
+@media (max-width: 1200px) {
+    nav ul {
+        justify-content: space-evenly;
+    }
+
+    .productos {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -234,5 +377,27 @@ footer .whatsapp img{
     .grid-galeria{
         grid-template-columns: 1fr;
     }
+}
 
+@media (max-width: 480px) {
+    body {
+        padding: 1rem;
+    }
+
+    main section.nosotros img {
+        width: 100%;
+        height: auto;
+    }
+
+    nav ul {
+        gap: 0.5rem;
+    }
+
+    .card-producto {
+        padding: 0.5rem;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+    }
 }
