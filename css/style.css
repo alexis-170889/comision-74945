@@ -66,6 +66,10 @@ nav ul li a {
     color: #E0E0E0;
     font-weight: bold;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 44e67d137c61857ab90df12192ba8b11fbc0cf91
 /* Secciones principales */
 main section {
     margin: 2rem;
@@ -277,6 +281,7 @@ section.consejos h2{
     font-size: 1rem;
 }
 
+<<<<<<< HEAD
 .carousel-item img {
     transition: transform 0.5s ease-in-out;
     max-width: 80%;
@@ -289,6 +294,8 @@ section.consejos h2{
     text-shadow: 2px 2px 4px rgb(255, 255, 255);
 }
 
+=======
+>>>>>>> 44e67d137c61857ab90df12192ba8b11fbc0cf91
 /* Footer */
 footer {
     background-color: #1F1F1F;
@@ -388,6 +395,7 @@ footer form button:hover {
     .grid-galeria{
         grid-template-columns: 1fr;
     }
+<<<<<<< HEAD
 }
 
 @media (max-width: 480px) {
@@ -419,5 +427,30 @@ footer form button:hover {
     }
     .carousel-caption p, .carousel-caption ul, .carousel-caption ol {
         font-size: 0.9rem;
+    }
+=======
+>>>>>>> 44e67d137c61857ab90df12192ba8b11fbc0cf91
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 1rem;
+    }
+
+    main section.nosotros img {
+        width: 100%;
+        height: auto;
+    }
+
+    nav ul {
+        gap: 0.5rem;
+    }
+
+    .card-producto {
+        padding: 0.5rem;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
     }
 }
