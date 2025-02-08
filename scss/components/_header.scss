@@ -1,0 +1,45 @@
+/* Header y navegación */
+.navbar {
+    background-color: var(--color-secundario) !important;
+}
+.navbar-brand img {
+    width: 100px;
+    height: auto;
+}
+.nav-link {
+    color: var(--color-texto) !important;
+    font-weight: bold;
+}
+.nav-link:hover {
+    color: var(--color-hover) !important;
+}
+
+/* Header */
+header {
+    background-color: #1F1F1F;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #E0E0E0;
+    font-weight: bold;
+}

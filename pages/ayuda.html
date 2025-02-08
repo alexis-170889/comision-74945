@@ -1,64 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayuda - Somos Moon</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <meta name="description" content="Somos una tienda de ropa interior , comoda y de la jejor calidad, ideal para tu dia a dia">
+    <meta name="keywords" content="lenceria, ropa, interior, algodon, corpiño, boxer, conjunto, bombacha, medias, encaje, intimo, sexi, koury, cuore, somos, moon">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <title>Tips - Somos Moon</title>
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
+
 <body>
     <header>
-        <nav aria-label="Menú principal">
-            <a href="../index.html">
-                <img src="../img/fase lunar.png" class="logo" alt="Logo Somos Moon">
-            </a>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="ayuda.html">Ayuda y Beneficios</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/PNG BLANCO LOGO MOON.png"
+                        alt="Somos Moon"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/ayuda.html">Tips Moon</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <section aria-labelledby="consejos-cuidado">
-            <h1 id="consejos-cuidado">Consejos de Cuidado</h1>
-            <p>Para mantener tus prendas en perfecto estado, lava siempre a mano con detergente suave y seca al aire libre.</p>
-            <ul>
-                <li>Separa la ropa interior blanca de las prendas de color para evitar manchas.</li>
-                <li>Evita usar suavizantes en prendas elásticas para preservar su forma y elasticidad.</li>
-                <li>Guarda tu ropa interior en un lugar fresco y seco, lejos de la luz directa del sol.</li>
-            </ul>
-        </section>
-        <section aria-labelledby="tips-moda">
-            <h2 id="tips-moda">Tips de Moda</h2>
-            <ul>
-                <li>Elige ropa interior de colores neutros para evitar que se note debajo de prendas claras.</li>
-                <li>Para ocasiones especiales, combina tu ropa interior con tu atuendo exterior para un look armonioso.</li>
-                <li>Experimenta con diferentes estilos y tejidos para encontrar el equilibrio entre comodidad y estilo.</li>
-            </ul>
-        </section>
-        <section aria-labelledby="consejos-conservacion">
-            <h2 id="consejos-conservacion">Consejos de Conservación</h2>
-            <ul>
-                <li>Utiliza bolsas de lavado para proteger tus prendas más delicadas en la lavadora.</li>
-                <li>No retuerzas las prendas después del lavado para evitar deformaciones.</li>
-                <li>Evita el uso frecuente de secadoras para prolongar la vida útil de tus prendas.</li>
-            </ul>
-        </section>
-        <section aria-labelledby="tutoriales-compra">
-            <h2 id="tutoriales-compra">Tutoriales de Compra</h2>
-            <p>Sigue estos pasos para realizar tu compra en nuestra tienda:</p>
-            <ol>
-                <li>Elige los productos que desees y agrégalos al carrito.</li>
-                <li>Completa tus datos de envío y facturación.</li>
-                <li>Selecciona el método de pago y confirma tu pedido.</li>
-            </ol>
-        </section>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="../img/consejos 1.jpg" class="d-block w-100" alt="consejos">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Consejos de cuidado</h5>
+                        <p>Para mantener tus prendas en perfecto estado, lava siempre a mano con detergente suave y seca al aire libre.</p>
+                        <ul>
+                            <li>Separa la ropa interior blanca de las prendas de color para evitar manchas.</li>
+                            <li>Evita usar suavizantes en prendas elásticas para preservar su forma y elasticidad.</li>
+                            <li>Guarda tu ropa interior en un lugar fresco y seco, lejos de la luz directa del sol.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../img/consejos 2.jpg" class="d-block w-100" alt="Consejos de moda para ropa interior">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Consejos de Moda</h5>
+                        <ul>
+                            <li>Elige ropa interior de colores neutros para evitar que se note debajo de prendas claras.</li>
+                            <li>Para ocasiones especiales, combina tu ropa interior con tu atuendo exterior para un look
+                                armonioso.</li>
+                            <li>Experimenta con diferentes estilos y tejidos para encontrar el equilibrio entre comodidad y
+                                estilo.</li>
+                        </ul>>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/consejos 3.jpg" class="d-block w-100" alt="Consejos de Conservacion">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Consejos de Conservación</h5>
+                        <ul>
+                            <li>Utiliza bolsas de lavado para proteger tus prendas más delicadas en la lavadora.</li>
+                            <li>No retuerzas las prendas después del lavado para evitar deformaciones.</li>
+                            <li>Evita el uso frecuente de secadoras para prolongar la vida útil de tus prendas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/tienda 2.jpg" class="d-block w-100" alt="como comprar">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Tutoriales de Compra</h5>
+                        <p>Sigue estos pasos para realizar tu compra en nuestra tienda:</p>
+                        <ol>
+                            <li>Elige los productos que desees y agrégalos al carrito.</li>
+                            <li>Completa tus datos de envío y facturación.</li>
+                            <li>Selecciona el método de pago y confirma tu pedido.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
     </main>
     <footer>
-        <section class="redes" aria-labelledby="redes-sociales">
+        <section class="redes">
             <h2 id="redes-sociales">Síguenos en redes sociales</h2>
             <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
                 <img src="../img/instagram.png" alt="Logo de Instagram">
@@ -67,22 +127,17 @@
                 <img src="../img/pinterest.png" alt="Logo de Pinterest">
             </a>
         </section>
-        <section class="formulario" aria-labelledby="suscripcion">
-            <h2 id="suscripcion">Suscríbete a nuestras novedades</h2>
-            <form action="#" method="post">
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
-                <button type="submit">Suscribirse</button>
-            </form>
-        </section>
         <a href="https://web.whatsapp.com/" target="_blank" class="whatsapp" aria-label="WhatsApp">
             <img src="../img/whatsapp.png" alt="Logo de WhatsApp">
         </a>
-        <section class="terminos" aria-labelledby="terminos-condiciones">
-            <h2 id="terminos-condiciones">Información Legal</h2>
+        <section class="terminos">
+            <h2>Información Legal</h2>
             <a href="#terminos">Términos y Condiciones</a>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
-</html>
 
+</html>

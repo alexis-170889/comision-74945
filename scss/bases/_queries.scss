@@ -1,0 +1,40 @@
+/** queries**/ 
+
+@media (max-width: 1200px) {
+    nav ul {
+        justify-content: space-evenly;}
+    .productos {grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));}
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;}
+    .productos {
+        flex-direction: column;}
+    .card-producto {
+        flex: 1 1 100%;
+        max-width: 100%;}
+    .grid-galeria {
+        grid-template-columns: 1fr;}
+    }
+    .carousel-caption h5 {
+        font-size: 1.2rem;
+    }
+    .carousel-caption p, .carousel-caption ul, .carousel-caption ol {
+        font-size: 0.9rem;
+    }
+
+@media (max-width: 480px) {
+    body {padding: 1rem;}
+    main section.nosotros img {
+        width: 100%;
+        height: auto;}
+    nav ul {
+        gap: 0.5rem;}
+    .card-producto {
+        padding: 0.5rem;
+    }
+    footer {
+        grid-template-columns: 1fr;}
+}

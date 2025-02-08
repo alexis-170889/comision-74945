@@ -1,0 +1,29 @@
+:root {
+    --color-principal: #121212; /* Negro */
+    --color-secundario: #1F1F1F; /* Gris oscuro */
+    --color-texto: #E0E0E0; /* Blanco grisáceo */
+    --color-acento: #413f44; /* Para botones/enlaces */
+    --color-hover: #c1b9d4; /* Para efectos hover */
+}
+
+/* Reset y configuración base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: var(--color-principal);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+:root {
+    --color-principal: #121212; /* Negro */
+    --color-secundario: #1F1F1F; /* Gris oscuro */
+    --color-texto: #E0E0E0; /* Blanco grisáceo */
+    --color-acento: #413f44; /* Para botones/enlaces */
+    --color-hover: #c1b9d4; /* Para efectos hover */
+}
